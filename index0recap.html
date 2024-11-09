@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>susur bari travel</title>
+    <!-- daisy ui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="">
+    <header class="mb-8 text-amber-700">
+          <!-- navber -->
+          <div class="navbar bg-base-100">
+            <div class="flex-1">
+              <a class="btn btn-ghost text-xl">Tour of Hodai dream</a>
+            </div>
+            <div class="flex-none">
+              <div class="dropdown dropdown-end">
+                <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+                  <div class="indicator">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-5 w-5"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor">
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                    </svg>
+                    <span id="seat-lavel" class="badge badge-sm indicator-item">0</span>
+                  </div>
+                </div>
+                <div
+             tabindex="0" class="card card-compact dropdown-content bg-base-100 z-[1] mt-3 w-52 shadow">
+                </div>
+              </div>
+            </div>
+          </div>
+        <!-- navber end -->
+         <!-- hero -->
+         <div class="hero ">
+            <div class="hero-content flex-col lg:flex-row-reverse justify-between">
+              <img
+            src="img/amos-bar-zeev-3yzE1SUfbwY-unsplash.jpg" class="max-w-sm rounded-lg shadow-2xl" />
+              <div>
+                <h1 class="text-5xl font-bold">Let's Travel</h1>
+                <p class="py-6">
+                 just play game and end of the day.that is said enjoy the tour
+                </p>
+               <div>
+                <p class="text-3xl">total budget : <span>900$</span></p>
+                
+               </div>
+              </div>
+            </div>
+          </div>
+          <!-- hero end -->
+    </header>
+    <main class="mt-8 mr-12 ml-12 ">
+      <section class="p-4 grid lg:grid-cols-2 gap-6 ">
+        <div class="grid md:grid-cols-2 gap-6">
+            <!-- card -->
+           <!--  -->
+           <div class="card glass">
+            <figure>
+              <img src="img/robin-noguier-sydwCr54rf0-unsplash.jpg" alt="car!" />
+            </figure>
+            <div class="card-body text-amber-700">
+              <h2 class="card-title">Rangamathati</h2>
+              <p class="text-2xl">cost : <span>300</span>$</p>
+              <button class="add-btn w-full btn btn-outline btn-warning">Add to card</button>
+            </div>
+          </div>
+           <!--  -->
+           <div class="card glass ">
+            <figure>
+              <img
+                src="img/austin-ban-juHayWuaaoQ-unsplash.jpg"
+                alt="car!" />
+            </figure>
+            <div class="card-body text-amber-700">
+              <h2 class="card-title">Himacal</h2>
+              <p class="text-2xl">cost : <span>300</span>$</p>
+              <button class="add-btn  w-full btn btn-outline btn-warning">Add to card</button>
+            </div>
+          </div>
+           <!--  -->
+           <div class="card glass">
+            <figure>
+              <img
+                src="img/jamie-fenn-WdQuEEJe-O0-unsplash.jpg"
+                alt="car!" />
+            </figure>
+            <div class="card-body text-amber-700">
+              <h2 class="card-title">Sumangonj</h2>
+              <p class="text-2xl">cost : <span>500</span>$</p>
+              <button class="add-btn  w-full btn btn-outline btn-warning">Add to card</button>
+            </div>
+          </div>
+           <!--  -->
+           <div class="card glass">
+            <figure>
+              <img
+                src="img/markus-spiske-XYpJfOvMIG0-unsplash.jpg"
+                alt="car!" />
+            </figure>
+            <div class="card-body text-amber-700">
+              <h2 class="card-title">Sea Batch</h2>
+              <p class="text-2xl">cost : <span>500</span>$</p>
+              <button class="add-btn  w-full btn btn-outline btn-warning">Add to card</button>
+            </div>
+          </div>
+             <!-- card end -->
+          </div>
+          <!--  -->
+          <div class="p-4 w-96">
+           <!-- total side -->
+           <div class="card shadow-xl mb-6 border-2 border-amber-300 text-amber-700 ">
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Cost of Travel</h2>
+             
+              <ul id="placename-container" class="flex gap-5 w-20 text-center">
+                 
+              </ul>
+              <p>Total cost:<span id="total-cost-in-travel">0</span>$</p>
+              <p>--------------------------------------</p>
+              <div class="card-actions justify-center">
+                <button class="add-btn  btn btn-outline btn-warning">Bus +100</button>
+                <button class="add-btn  btn btn-outline btn-warning">Train +200</button>
+                <button class=" add-btn btn btn-outline btn-warning">Flight +500</button>
+                <p>-------------------------------------</p>
+                <p>Grand Total : <span>0 </span>$</p>
+              </div>
+            </div>
+          </div>
+          </div>
+      </section>
+    </main>
+    <footer>
+
+    </footer>
+    
+
+    <script src="js/recap.js"></script>
+</body>
+</html>
